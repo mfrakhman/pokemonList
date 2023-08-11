@@ -1,0 +1,42 @@
+:root {
+  --primary: rgb(0, 0, 255);
+  --secondary: rgb(255, 0, 0);
+  --bg: rgb(255, 255, 255);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-content {
+  border: solid 1px;
+  border-color: var(--primary);
+  text-align: center;
+  padding: 4px 4px;
+  margin: 4px 4px;
+  transition: 300ms;
+}
+
+.grid-content:hover {
+  background-color: var(--primary);
+}
+.grid-content img {
+  width: 100%;
+}
+
+.reset {
+  border: solid 2px;
+  text-align: center;
+  transition: 300ms;
+}
+
+.reset:hover {
+  background-color: brown;
+}
