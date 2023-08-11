@@ -1,6 +1,8 @@
 class Pokemon {
   reset() {
-    window.location.reload();
+    const pokemonResult = document.getElementById("pokemon-result");
+    pokemonResult.innerHTML = "";
+    console.log("red");
   }
 
   showPokemonApi() {
@@ -23,8 +25,8 @@ class Pokemon {
     const pokemonResult = document.getElementById("pokemon-result");
     pokemonResult.innerHTML = "";
     pokemonResult.innerHTML = "Aku Pokemon Angin";
-    pokemonResult.style.color = "Cyan";
-    console.log("Cyan");
+    pokemonResult.style.color = "Green";
+    console.log("Green");
   }
 
   showPokemonJahat() {

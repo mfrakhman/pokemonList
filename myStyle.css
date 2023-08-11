@@ -1,5 +1,5 @@
 :root {
-  --primary: rgb(0, 0, 255);
+  --primary: rgb(55, 161, 118);
   --secondary: rgb(255, 0, 0);
   --bg: rgb(255, 255, 255);
 }
@@ -8,6 +8,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  background-color: var(--bg);
 }
 
 .main-grid {
@@ -26,17 +27,42 @@ body {
 
 .grid-content:hover {
   background-color: var(--primary);
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.4);
 }
+
+.grid-content:hover img {
+  scale: 1.1;
+}
+
+.grid-content:focus {
+  outline: 1px solid --primary;
+  background-color: var(--primary);
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.4);
+  scale: 1.1;
+}
+
 .grid-content img {
   width: 100%;
+  transition: 300ms;
 }
 
 .reset {
-  border: solid 2px;
+  padding: 1em 2em;
+  display: block;
+  margin: 0 auto;
+  border: solid 1px var(--primary);
+  border-radius: 0.5em;
   text-align: center;
   transition: 300ms;
 }
 
 .reset:hover {
-  background-color: brown;
+  background-color: var(--primary);
 }
+
+h1 ,h2{
+  text-align: center;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+
