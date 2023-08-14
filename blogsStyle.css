@@ -1,0 +1,37 @@
+:root {
+  --primary: rgb(55, 161, 118);
+  --secondary: rgb(255, 0, 0);
+  --bg: rgb(255, 255, 255);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+}
+
+header {
+    background-color: var(--bg);
+    color: var(--primary);
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+.blog-post {
+    border: 1px solid --secondary;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.blog-post h2 {
+    margin-top: 0;
+}
+
+.blog-post p {
+    margin: 0;
+}
