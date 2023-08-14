@@ -1,6 +1,6 @@
 :root {
   --primary: rgb(55, 161, 118);
-  --secondary: rgb(255, 0, 0);
+  --secondary: rgb(26, 26, 26);
   --bg: rgb(255, 255, 255);
 }
 
@@ -12,26 +12,49 @@ body {
 }
 
 header {
-    background-color: var(--bg);
-    color: var(--primary);
-    text-align: center;
-    padding: 1rem;
-}
-
-main {
-    padding: 2rem;
+  background-color: var(--secondary);
+  color: var(--primary);
+  text-align: center;
+  padding: 1rem;
 }
 
 .blog-post {
-    border: 1px solid --secondary;
-    margin-bottom: 1rem;
-    padding: 1rem;
+  border: 1px solid var(--primary);
+  margin: 1rem;
+  padding: 1rem;
+  transition: 0.4s;
+}
+
+.blog-post:hover {
+  background-color: var(--primary);
+}
+
+.blog-post:focus {
+    scale: 1.1;
 }
 
 .blog-post h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .blog-post p {
-    margin: 0;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.blog-post hr {
+  width: 100%;
+}
+
+.blog-details {
+  margin: 1rem;
+}
+
+footer {
+    background-color: var(--secondary);
+  color: var(--primary);
+  text-align: center;
+  padding: 1rem;
 }

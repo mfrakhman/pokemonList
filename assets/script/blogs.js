@@ -13,6 +13,22 @@ const blogPosts = [
     author: "Mfrakhman",
     date: "15-08-2023",
   },
+
+  {
+    title: "Third Blog Post",
+    content:
+      "Still a blank post brother, please dont waste your time reading this post",
+    author: "Mfrakhman",
+    date: "16-08-2023",
+  },
+
+  {
+    title: "Fourth Blog Post",
+    content:
+      "Still a blank post brother, please dont waste your time reading this post",
+    author: "Mfrakhman",
+    date: "17-08-2023",
+  },
 ];
 
 function createBlogPostElement(post) {
